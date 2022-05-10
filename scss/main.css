@@ -48,8 +48,8 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
-  font-size: 38.0444px;
-  line-height: 43px;
+  font-size: 17px;
+  line-height: 24px;
 }
 
 :root {
@@ -65,11 +65,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .header {
   background-image: url(../../img/bg-img-svg.svg);
-  background-position: center center;
+  height: 100vh;
+  background-position: center right;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-  color: #fff;
 }
 
 .header__list {
@@ -132,12 +131,23 @@ h1, h2, h3, h4, h5, h6 {
   left: -50px;
   top: -40px;
   z-index: -1;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .header__item:not(:last-child) {
   margin-right: 76px;
+}
+
+@media (max-width: 768px) {
+  .header__item a {
+    font-size: 17px;
+  }
+  .header__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .header__item-first {
+    width: 130px;
+    top: -40px;
+    left: -42px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
