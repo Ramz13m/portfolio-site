@@ -50,11 +50,17 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   font-size: 17px;
   line-height: 24px;
+  color: var(--text-color);
 }
 
 :root {
   --header-color: #d87d4a;
   --text-color: #000C24;
+}
+
+.dark-theme {
+  --header-color: blue;
+  --text-color: #000;
 }
 
 .container {
@@ -69,6 +75,19 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center right;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.header__nav-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__moon-icon {
+  margin-left: 100px;
 }
 
 .header__list {
@@ -135,6 +154,68 @@ h1, h2, h3, h4, h5, h6 {
 
 .header__item:not(:last-child) {
   margin-right: 76px;
+}
+
+.header__dark-wrapper {
+  margin-left: 150px;
+}
+
+.header__dark {
+  background: #292C35;
+}
+
+.header__checkbox {
+  position: absolute;
+}
+
+.header__label {
+  background-color: #111;
+  border-radius: 50px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  height: 26px;
+  width: 50px;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.header__ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.header__checkbox:checked + .header__label .header__ball {
+  -webkit-transform: translateX(24px);
+          transform: translateX(24px);
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
 }
 
 @media (max-width: 768px) {
