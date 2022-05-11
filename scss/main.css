@@ -161,7 +161,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header__dark {
-  background: #292C35;
+  background: #222;
 }
 
 .header__checkbox {
@@ -210,6 +210,10 @@ h1, h2, h3, h4, h5, h6 {
           transform: translateX(24px);
 }
 
+.header__close-button, .header .header__open {
+  display: none;
+}
+
 .fa-moon {
   color: #f1c40f;
 }
@@ -218,7 +222,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #f39c12;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1231px) {
+  .header__dark-wrapper {
+    margin-left: 50px;
+  }
   .header__item a {
     font-size: 17px;
   }
@@ -229,6 +236,91 @@ h1, h2, h3, h4, h5, h6 {
     width: 130px;
     top: -40px;
     left: -42px;
+  }
+  .header__label {
+    height: 20px;
+    width: 40px;
+  }
+  .header__ball {
+    top: 1px;
+    left: 1px;
+    height: 18px;
+    width: 18px;
+  }
+  .fa-sun, .fa-moon {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 825px) {
+  .header__list {
+    margin-left: 40px;
+  }
+  .header__item:not(:last-child) {
+    margin-right: 40px;
+  }
+  .header .header__item-first {
+    width: 100px;
+    top: -44px;
+    left: 70px;
+  }
+}
+
+@media (max-width: 760px) {
+  .header__nav-content {
+    position: relative;
+    top: 20px;
+  }
+  .header__open, .header .header__close-button {
+    display: block;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+  }
+  .header__list {
+    width: 30%;
+    border-radius: 5px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: -20px;
+    background-color: #000;
+    margin-left: 0;
+    left: -10px;
+    height: 100vh;
+    -webkit-box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.5);
+    display: none;
+    padding-top: 100px;
+  }
+  .header__item {
+    text-align: center;
+  }
+  .header__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .header__dark-wrapper {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .header__toggle-modal, .header .header__close-button, .header .header__open {
+    display: block;
+  }
+  .header__close-button {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+  }
+  .header__dark-wrapper {
+    right: 300px;
+  }
+  .header__open svg, .header .header__close-button svg {
+    width: 20px;
   }
 }
 /*# sourceMappingURL=main.css.map */

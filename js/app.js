@@ -1,21 +1,23 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // const moon = document.querySelector(".header__moon-icon");
-  // moon.addEventListener("click", () => {
-  //   document.body.classList.toggle("dark-theme");
-  //   if(document.body.classList.contains("dark-theme")){
-  //     moon.src = "./img/sun.png"
-  //   } else{
-  //     moon.src = "./img/moon.png"
-  //   }
-  // })
-  
-  // test 2
-  
+   
   const chk = document.getElementById('chk');
+  const headerButton = document.querySelector(".header__open");
+  const headerList = document.querySelector(".header__list");
+  const closeButton = document.querySelector(".header__close-button")
   
   chk.addEventListener('click', () => {
     document.body.classList.toggle('header__dark');
   });
+
+  headerButton.addEventListener('click', () => {
+    headerList.classList.add("header__toggle-modal")
+  })
+  
+  closeButton.addEventListener('click', ()=>{
+    headerList.classList.remove("header__toggle-modal")
+
+  })
+
   
   
 })
