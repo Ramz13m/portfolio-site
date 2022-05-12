@@ -129,9 +129,10 @@
 
 @media (max-width: 376px){
   .about-section{
+    background-position-x: -530px;
     
     &__info-content{
-      width: 250px;
+      width: 300px;
     }
     &__img-content{
       width: 250px;
