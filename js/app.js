@@ -15,8 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
   
   closeButton.addEventListener('click', ()=>{
     headerList.classList.remove("header__toggle-modal")
-
   })
+
+ 
 
   
   

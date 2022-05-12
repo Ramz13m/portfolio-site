@@ -157,7 +157,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header__dark {
-  background: #222;
+  background-color: var(--text-color);
 }
 
 .header__checkbox {
