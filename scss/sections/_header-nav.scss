@@ -448,6 +448,9 @@
 }
 
 @media (max-width: 375px) {
+  .header{
+    background-position-x: 75%;
+  }
   .header .header__item-first {
     left: 60px;
   }
