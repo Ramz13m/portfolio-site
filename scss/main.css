@@ -56,6 +56,7 @@ h1, h2, h3, h4, h5, h6 {
 :root {
   --header-color: #d87d4a;
   --text-color: #000C24;
+  --link-color: #928A97;
 }
 
 .container {
@@ -101,7 +102,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   font-size: 21.4px;
   line-height: 24px;
-  color: #928A97;
+  color: var(--link-color);
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
@@ -242,7 +243,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header__social-icon {
-  fill: #928A97;
+  fill: var(--link-color);
   -webkit-transition: .3s ease;
   transition: .3s ease;
 }
@@ -254,6 +255,47 @@ h1, h2, h3, h4, h5, h6 {
   transition: .3s ease;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.header__scroll {
+  display: inline-block;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  margin-top: 100px;
+}
+
+.header__scroll:hover .header__scroll-content svg {
+  fill: #FFFFFF;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.header__scroll-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.header__scroll-content:hover .header__scroll-text {
+  color: #fff;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.header__scroll svg {
+  fill: var(--link-color);
+}
+
+.header__scroll-text {
+  margin-left: 10px;
+  color: var(--link-color);
 }
 
 .fa-moon {
