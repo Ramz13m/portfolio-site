@@ -80,7 +80,7 @@
   
   &__dark {
     background-color: var(--text-color);
-    transition: 0.3s ease;
+    transition: 0.6s ease;
   }
   
   &__checkbox {
@@ -329,7 +329,7 @@
       margin-left: 0;
       left: -10px;
       height: 100vh;
-      box-shadow: 10px 0px 10px rgba(0,0,0,0.5);
+      box-shadow: 200px 0px 5px rgba(0,0,0,0.5);
       display: none;
       padding-top: 100px;
     }
