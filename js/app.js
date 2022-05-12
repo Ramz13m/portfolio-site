@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
   box.addEventListener("click", ()=>{
     headerList.classList.remove("header__toggle-modal");
+    document.body.style.overflow = ""
   })
 
   
