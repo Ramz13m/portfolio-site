@@ -158,10 +158,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .header__dark {
   background-color: var(--text-color);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .header__checkbox {
   position: absolute;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .header__label {
@@ -250,7 +254,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .header__social-icon:hover {
   cursor: pointer;
-  fill: #FFFFFF;
+  fill: var(--header-color);
   -webkit-transition: .3s ease;
   transition: .3s ease;
   -webkit-transform: scale(1.1);
@@ -296,6 +300,11 @@ h1, h2, h3, h4, h5, h6 {
 .header__scroll-text {
   margin-left: 10px;
   color: var(--link-color);
+}
+
+.text-type {
+  color: var(--header-color);
+  padding: 3px;
 }
 
 .fa-moon {
@@ -485,6 +494,12 @@ h1, h2, h3, h4, h5, h6 {
   }
   .header .header__item-first {
     left: 44px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header__item-first {
+    left: 60px;
   }
 }
 /*# sourceMappingURL=main.css.map */
