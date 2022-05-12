@@ -420,11 +420,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 445px) {
+  .header__list {
+    width: 60%;
+  }
+  .header__info-name {
+    width: 210px;
+  }
   .header__info-text {
     width: 200px;
   }
   .header__dark-wrapper {
     right: 80px;
+  }
+  .header .header__item-first {
+    left: 84px;
+  }
+}
+
+@media (max-width: 445px) {
+  .header__dark-wrapper {
+    right: 30px;
+  }
+  .header .header__item-first {
+    left: 44px;
   }
 }
 /*# sourceMappingURL=main.css.map */

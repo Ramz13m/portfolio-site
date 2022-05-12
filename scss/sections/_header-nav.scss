@@ -367,6 +367,15 @@
 
 @media (max-width: 445px) {
   .header{
+    
+    &__list{
+      width: 60%;
+    }
+    
+    &__info-name{
+      width: 210px;
+    }
+    
     &__info-text{
       width: 200px;
     }
@@ -374,5 +383,20 @@
     &__dark-wrapper{
       right: 80px;
     }
+  }
+  .header .header__item-first {
+    left: 84px;
+  }
+}
+
+@media (max-width: 445px) {
+  .header{
+    &__dark-wrapper{
+      right: 30px;
+    }
+  }
+  
+  .header .header__item-first {
+    left: 44px;
   }
 }
