@@ -119,6 +119,46 @@
   &__close-button, .header__open{
     display: none;
   }
+  
+  &__info-name{
+    color: #fff;
+    font-weight: 800;
+    font-size: 45.1778px;
+    line-height: 51px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-top: 130px;
+  }
+  
+  &__info-text{
+    font-weight: 600;
+    font-size: 28.5333px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-bottom: 38px;
+  }
+  
+  &__info-list{
+    display: flex;
+    align-items: center;
+  }
+  
+  &__info-item:not(:last-child){
+    margin-right: 22px;
+  }
+  
+  &__social-icon{
+    fill: #928A97;
+    transition: .3s ease;
+  }
+  
+  &__social-icon:hover{
+    cursor: pointer;
+    fill: #FFFFFF;
+    transition: .3s ease;
+    transform: scale(1.1)
+  }
 }
 
 .fa-moon {
@@ -168,6 +208,21 @@
   }
 }
 
+@media (max-width: 1015px) {
+  .header{
+    &__info-name{
+      width: 400px;
+      margin-top: 50px;
+    }
+    
+    &__info-text{
+      max-width: 410px;
+      width: 100%;
+    }
+  }
+}
+
+
 @media (max-width: 825px) {
   .header{
     
@@ -182,15 +237,32 @@
     .header__item-first {
       width: 100px;
       top: -44px;
-      left: 70px;
+      left: -20px;
+    }
+    
+    
+    &__info-name{
+      font-size: 38px;
+      line-height: 45px;
+    }
+    
+    &__info-text{
+      font-size: 22px;
     }
   } 
 }
+
 @media (max-width: 760px) {
   .header{
+    background-position: center center;
+    
     &__nav-content{
       position: relative;
       top: 20px;
+    }
+    
+    .header__item-first {
+      left: 65px;
     }
     
     &__open, .header__close-button{
@@ -200,7 +272,7 @@
       outline: none;
       color: #fff;
     }
-
+    
     &__list{
       width: 30%;
       border-radius: 5px;
@@ -240,14 +312,67 @@
       right: 30px; 
       top: 20px;
     }
-
+    
     &__dark-wrapper{
       right: 300px;
     }
-
+    
     &__open svg, .header__close-button svg{
       width: 20px;
     }
   }
+  
+}
 
+@media (max-width: 647px) {
+  .header{
+    
+    .header__item-first {
+      left: 50px;
+    }
+    
+    &__info-name {
+      font-size: 30px;
+      margin-top: 70px;
+    }
+    
+  }
+}
+@media (max-width: 600px) {
+  .header{
+    &__item-first {
+      left: 42px;
+    }
+    
+    &__info-name {
+      font-size: 25px;
+      line-height: 30px;
+    }
+    
+    &__info-text {
+      font-size: 20px;  
+    }
+    
+    &__info-item:not(:last-child){
+      margin-right: 10px;
+    }
+    
+    &__dark-wrapper{
+      right: 180px;
+    }
+  }
+}
+
+
+
+@media (max-width: 445px) {
+  .header{
+    &__info-text{
+      width: 200px;
+    }
+    
+    &__dark-wrapper{
+      right: 80px;
+    }
+  }
 }

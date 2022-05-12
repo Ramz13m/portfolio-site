@@ -58,11 +58,6 @@ h1, h2, h3, h4, h5, h6 {
   --text-color: #000C24;
 }
 
-.dark-theme {
-  --header-color: blue;
-  --text-color: #000;
-}
-
 .container {
   max-width: 1280px;
   padding: 0 10px;
@@ -214,6 +209,53 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
+.header__info-name {
+  color: #fff;
+  font-weight: 800;
+  font-size: 45.1778px;
+  line-height: 51px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: 130px;
+}
+
+.header__info-text {
+  font-weight: 600;
+  font-size: 28.5333px;
+  line-height: 32px;
+  color: #FFFFFF;
+  margin-top: 20px;
+  margin-bottom: 38px;
+}
+
+.header__info-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__info-item:not(:last-child) {
+  margin-right: 22px;
+}
+
+.header__social-icon {
+  fill: #928A97;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.header__social-icon:hover {
+  cursor: pointer;
+  fill: #FFFFFF;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .fa-moon {
   color: #f1c40f;
 }
@@ -252,6 +294,17 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media (max-width: 1015px) {
+  .header__info-name {
+    width: 400px;
+    margin-top: 50px;
+  }
+  .header__info-text {
+    max-width: 410px;
+    width: 100%;
+  }
+}
+
 @media (max-width: 825px) {
   .header__list {
     margin-left: 40px;
@@ -262,14 +315,27 @@ h1, h2, h3, h4, h5, h6 {
   .header .header__item-first {
     width: 100px;
     top: -44px;
-    left: 70px;
+    left: -20px;
+  }
+  .header__info-name {
+    font-size: 38px;
+    line-height: 45px;
+  }
+  .header__info-text {
+    font-size: 22px;
   }
 }
 
 @media (max-width: 760px) {
+  .header {
+    background-position: center center;
+  }
   .header__nav-content {
     position: relative;
     top: 20px;
+  }
+  .header .header__item-first {
+    left: 65px;
   }
   .header__open, .header .header__close-button {
     display: block;
@@ -321,6 +387,44 @@ h1, h2, h3, h4, h5, h6 {
   }
   .header__open svg, .header .header__close-button svg {
     width: 20px;
+  }
+}
+
+@media (max-width: 647px) {
+  .header .header__item-first {
+    left: 50px;
+  }
+  .header__info-name {
+    font-size: 30px;
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header__item-first {
+    left: 42px;
+  }
+  .header__info-name {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .header__info-text {
+    font-size: 20px;
+  }
+  .header__info-item:not(:last-child) {
+    margin-right: 10px;
+  }
+  .header__dark-wrapper {
+    right: 180px;
+  }
+}
+
+@media (max-width: 445px) {
+  .header__info-text {
+    width: 200px;
+  }
+  .header__dark-wrapper {
+    right: 80px;
   }
 }
 /*# sourceMappingURL=main.css.map */
