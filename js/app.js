@@ -17,6 +17,16 @@ document.addEventListener("DOMContentLoaded", () => {
     headerList.classList.remove("header__toggle-modal")
   })
 
+
+  // vanilla
+
+  VanillaTilt.init(document.querySelector(".about-section__img-content"), {
+    max: 25,
+    speed: 1000
+  });
+  
+  //It also supports NodeList
+  VanillaTilt.init(document.querySelectorAll(".your-element"));
  
 
   
