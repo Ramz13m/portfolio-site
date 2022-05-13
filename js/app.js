@@ -4,10 +4,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const headerButton = document.querySelector(".header__open");
   const headerList = document.querySelector(".header__list");
   const closeButton = document.querySelector(".header__close-button");
-  const box = document.querySelector(".header__info-box")
+  const box = document.querySelector(".header__info-box");
+  const text = document.querySelector(".about-section__info");
+  
   
   chk.addEventListener('click', () => {
     document.body.classList.toggle('header__dark');
+    if(!text.classList.contains("dark-correct-color")){
+      text.classList.add("dark-correct-color");
+      text.style.cssText = "background-color: transparent;"
+    } else {
+      text.classList.remove("dark-correct-color");
+      text.style.cssText = "background-color: #fff;"
+    }
   });
 
   headerButton.addEventListener('click', () => {
