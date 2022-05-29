@@ -1194,6 +1194,10 @@ h1, h2, h3, h4, h5, h6 {
           justify-content: space-between;
 }
 
+.footer__form {
+  width: 800px;
+}
+
 .footer__form-title {
   font-size: 38.0444px;
   line-height: 43px;
@@ -1208,7 +1212,7 @@ h1, h2, h3, h4, h5, h6 {
   outline: none;
   border: 1px solid var(--text-color);
   border-radius: 5px;
-  width: 500px;
+  width: 100%;
   display: block;
 }
 
@@ -1243,7 +1247,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer__textarea {
   display: block;
-  width: 500px;
+  width: 100%;
   height: 150px;
 }
 
@@ -1283,5 +1287,59 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   font-size: 16.6444px;
   line-height: 19px;
+}
+
+@media (max-width: 967px) {
+  .footer__title {
+    font-size: 38px;
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 893px) {
+  .footer__title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer__title {
+    font-size: 25px;
+    margin-right: 10px;
+    line-height: 30px;
+  }
+  .footer__form-title {
+    font-size: 30px;
+  }
+  .footer__name-input {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .footer__textarea {
+    height: 100px;
+  }
+}
+
+@media (max-width: 464px) {
+  .footer__title {
+    margin: 0;
+    font-size: 20px;
+  }
+  .footer__bottom .header__info-list {
+    width: 300px;
+  }
+  .footer__bottom-title {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .footer__form {
+    width: 300px;
+  }
+  .footer__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=main.css.map */
