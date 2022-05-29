@@ -115,12 +115,14 @@
 @media (max-width: 600px){
   .footer{
     &__title{
+      text-align: center;
       font-size: 25px;
       margin-right: 10px;
       line-height: 30px;
     }
 
     &__form-title{
+      text-align: center;
       font-size: 30px;
     }
 
@@ -131,6 +133,10 @@
 
     &__textarea{
       height: 100px;
+    }
+
+    &__button{
+      width: 100%;
     }
   }
 }

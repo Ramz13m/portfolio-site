@@ -1304,11 +1304,13 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 600px) {
   .footer__title {
+    text-align: center;
     font-size: 25px;
     margin-right: 10px;
     line-height: 30px;
   }
   .footer__form-title {
+    text-align: center;
     font-size: 30px;
   }
   .footer__name-input {
@@ -1317,6 +1319,9 @@ h1, h2, h3, h4, h5, h6 {
   }
   .footer__textarea {
     height: 100px;
+  }
+  .footer__button {
+    width: 100%;
   }
 }
 
