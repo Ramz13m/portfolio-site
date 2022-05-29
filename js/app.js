@@ -9,7 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const text = document.querySelectorAll("p");
   const correctColor = document.querySelector(".about-section__info");
   const dots = document.querySelectorAll(".sk-chase-dot");
-  const skillsInfo = document.querySelector(".skills__info")
+  const skillsInfo = document.querySelector(".skills__info");
+  const line = document.querySelector(".works-section__line-item")
   
 
   chk.addEventListener('click', () => {
