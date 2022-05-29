@@ -5,19 +5,29 @@ document.addEventListener("DOMContentLoaded", () => {
   const headerList = document.querySelector(".header__list");
   const closeButton = document.querySelector(".header__close-button");
   const box = document.querySelector(".header__info-box");
-  const text = document.querySelector(".about-section__info");
+  const heading = document.querySelectorAll("h2");
+  const text = document.querySelectorAll("p");
+  const correctColor = document.querySelector(".about-section__info");
+  const dots = document.querySelectorAll(".sk-chase-dot");
   
-  
+
   chk.addEventListener('click', () => {
-    document.body.classList.toggle('header__dark');
-    if(!text.classList.contains("dark-correct-color")){
-      text.classList.add("dark-correct-color");
-      text.style.cssText = "background-color: transparent;"
-    } else {
-      text.classList.remove("dark-correct-color");
-      text.style.cssText = "background-color: #fff;"
-    }
-  });
+    document.body.classList.toggle("header__dark");
+    heading.forEach((item) => {
+      item.classList.toggle("dark-correct-color")
+    })
+    text.forEach((items) => {
+      items.classList.toggle("dark-correct-color")
+    })
+    correctColor.style.cssText = "background-color: transparent;"
+
+    dots.forEach(item => {
+      item.classList.toggle("sk-chase-dot-dark")
+    })
+  })
+
+
+ 
 
   headerButton.addEventListener('click', () => {
     headerList.classList.add("header__toggle-modal");
@@ -33,7 +43,6 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener("keydown", (e)=>{
     if(e.code === "Escape"){
       headerList.classList.remove("header__toggle-modal");
-      // modalSection.style.display = "none"
       document.body.style.overflow = ""
     }
   })
@@ -42,12 +51,6 @@ document.addEventListener("DOMContentLoaded", () => {
     headerList.classList.remove("header__toggle-modal");
     document.body.style.overflow = ""
   })
-
-  
-  
-  // 
-  
-  
 
 
   // vanilla
