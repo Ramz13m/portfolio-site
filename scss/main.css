@@ -63,6 +63,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+.light-correct-color {
+  background-color: transparent;
+}
+
 .container {
   max-width: 1280px;
   padding: 0 10px;
@@ -734,6 +738,18 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
 }
 
+.skills svg {
+  fill: var(--text-color);
+}
+
+.skills .header__scroll-text {
+  color: var(--text-color);
+}
+
+.skills .header__scroll-text:hover {
+  color: #222;
+}
+
 @media (max-width: 1000px) {
   .skills__title {
     font-size: 35px;
@@ -963,5 +979,94 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
+}
+
+.works-section {
+  margin-top: 92px;
+}
+
+.works-section__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.works-section__img-content {
+  margin-right: 70px;
+}
+
+.works-section__title {
+  font-weight: 600;
+  font-size: 38.0444px;
+  line-height: 43px;
+}
+
+.works-section__description {
+  font-weight: 700;
+  font-size: 28.5333px;
+  line-height: 32px;
+  margin: 38px 0;
+}
+
+.works-section__info {
+  font-size: 28.5333px;
+  line-height: 170%;
+}
+
+.works-section__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 57px 0;
+}
+
+.works-section__item {
+  padding: 10px 15px;
+  background-color: #928A97;
+  border-radius: 5px;
+}
+
+.works-section__item:not(:last-child) {
+  margin-right: 19px;
+}
+
+.works-section__skills {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.works-section__line-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.works-section__line-item {
+  width: 20%;
+  height: 5px;
+  background-color: var(--text-color);
+}
+
+.works-section__line-item:not(:first-child) {
+  background-color: #c4c4c4;
+}
+
+.works-section__line-item:not(:last-child) {
+  margin-right: 10px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,72 @@
+.works-section{
+  margin-top: 92px;
+  
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  &__img-content{
+    margin-right: 70px;
+  }
+  
+  &__title {
+    font-weight: 600;
+    font-size: 38.0444px;
+    line-height: 43px;
+  }
+  
+  &__description{
+    font-weight: 700;
+    font-size: 28.5333px;
+    line-height: 32px;
+    margin: 38px 0;
+  }
+  
+  &__info{
+    font-size: 28.5333px;
+    line-height: 170%;
+  }
+
+  &__list{
+    display: flex;
+    align-items: center;
+    margin: 57px 0;
+  }
+
+  &__item {
+    padding: 10px 15px;
+    background-color: #928A97;
+    border-radius: 5px;
+  }
+
+  &__item:not(:last-child){
+    margin-right: 19px;
+  }
+
+  &__skills{
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  &__line-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__line-item {
+    width: 20%;
+    height: 5px;
+    background-color: var(--text-color);
+  }
+
+  &__line-item:not(:first-child){
+    background-color: #c4c4c4;
+  }
+
+  &__line-item:not(:last-child){
+    margin-right: 10px;
+  }
+}

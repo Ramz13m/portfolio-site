@@ -55,6 +55,18 @@
     width: 600px;
     overflow: hidden;
   }
+
+  & svg{
+    fill: var(--text-color);
+  }
+
+  & .header__scroll-text{
+    color: var(--text-color);
+
+    &:hover{
+      color: #222;
+    }
+  }
 }
 
 @media (max-width: 1000px ) {

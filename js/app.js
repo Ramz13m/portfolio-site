@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const text = document.querySelectorAll("p");
   const correctColor = document.querySelector(".about-section__info");
   const dots = document.querySelectorAll(".sk-chase-dot");
+  const skillsInfo = document.querySelector(".skills__info")
   
 
   chk.addEventListener('click', () => {
@@ -19,8 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     text.forEach((items) => {
       items.classList.toggle("dark-correct-color")
     })
-    correctColor.style.cssText = "background-color: transparent;"
-
+    
     dots.forEach(item => {
       item.classList.toggle("sk-chase-dot-dark")
     })
